@@ -1,0 +1,47 @@
+appId: io.github.tessera.app
+productName: Tessera
+copyright: Copyright © 2026 Mo Maghaireh
+
+directories:
+  output: release
+  buildResources: build
+
+# Everything is bundled by Vite into out/, so the app ships without node_modules.
+files:
+  - out/**/*
+  - package.json
+  - '!node_modules/**/*'
+asar: true
+compression: maximum
+publish: null
+
+win:
+  icon: build/icon.png
+  target:
+    - target: nsis
+      arch: [x64]
+    - target: portable
+      arch: [x64]
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  artifactName: ${productName}-${version}-setup.${ext}
+portable:
+  artifactName: ${productName}-${version}-portable.${ext}
+
+mac:
+  icon: build/icon.png
+  category: public.app-category.developer-tools
+  target:
+    - target: dmg
+      arch: [universal]
+  artifactName: ${productName}-${version}-mac.${ext}
+
+linux:
+  icon: build/icon.png
+  category: Development
+  target:
+    - target: AppImage
+      arch: [x64]
+  artifactName: ${productName}-${version}-linux.${ext}
