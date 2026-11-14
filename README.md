@@ -8,7 +8,7 @@ A local-first SQL workbench that runs as a desktop app and as a website. Drop in
 
 ![Tessera dashboard](docs/screenshots/dashboard-dark.png)
 
-**[Download for Windows, macOS or Linux](https://github.com/mohdaktham/tessera/releases)** · **[Open it in your browser](https://YOUR_VERCEL_URL)**
+**[Download for Windows, macOS or Linux](https://github.com/mohdaktham/tessera/releases)** · **[Open it in your browser](https://tesserasql.vercel.app)**
 
 ## What it does
 
