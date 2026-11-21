@@ -49,7 +49,7 @@
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
     "recharts": "^3.10.1",
-    "sql-formatter": "^15.9.0",
+    "sql-formatter": "^15.9.1",
     "sql.js": "^1.16.0",
     "zod": "^4.6.7",
     "zustand": "^5.1.0"
